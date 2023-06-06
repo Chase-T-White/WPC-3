@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "service": "General Contracting",
+    "description": "Stress-free management of any project, big or small",
+    "serviceImg": "/images/Home/generalContracting.jpg"
+  },
+  {
+    "id": 2,
+    "service": "Build / Upgrade",
+    "description": "Specialized construction services for your new build or remodel project.",
+    "serviceImg": "/images/Home/renovation.jpg"
+  },
+  {
+    "id": 1,
+    "service": "OELO Lighting Solutions",
+    "description": "Lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom lorem epsom.",
+    "serviceImg": "/images/Home/oeloLights.jpg"
+  },
+  {
+    "id": 1,
+    "service": "Holiday Lighting",
+    "description": "The premiere provider of permanent and seasonal home and commercial lighting.",
+    "serviceImg": "/images/Home/holidayLights2.jpg"
+  }
+]

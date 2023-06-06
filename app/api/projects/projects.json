@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "projectName": "Project 1",
+    "shortDescription": "short description of project 1",
+    "projectOverview": "project overview text",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": [
+      {
+        "id": 1,
+        "projectDetails": "details pretaining to the current stage of the project"
+      },
+      {
+        "id": 2,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 3,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 4,
+        "projectDetails": "details pretaining to the current stage of the project"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "projectName": "Project 2",
+    "shortDescription": "short description of project 2",
+    "projectOverview": "project overview text",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": [
+      {
+        "id": 1,
+        "projectDetails": "details pretaining to the current stage of the project"
+      },
+      {
+        "id": 2,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 3,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 4,
+        "projectDetails": "details pretaining to the current stage of the project"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "projectName": "Project 3",
+    "shortDescription": "short description of project 3",
+    "projectOverview": "project overview text",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": [
+      {
+        "id": 1,
+        "projectDetails": "details pretaining to the current stage of the project"
+      },
+      {
+        "id": 2,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 3,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 4,
+        "projectDetails": "details pretaining to the current stage of the project"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "projectName": "Project 4",
+    "shortDescription": "short description of project 4",
+    "projectOverview": "project overview text",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": [
+      {
+        "id": 1,
+        "projectDetails": "details pretaining to the current stage of the project"
+      },
+      {
+        "id": 2,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 3,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 4,
+        "projectDetails": "details pretaining to the current stage of the project"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "projectName": "Project 5",
+    "shortDescription": "short description of project 5",
+    "projectOverview": "project overview text",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": [
+      {
+        "id": 1,
+        "projectDetails": "details pretaining to the current stage of the project"
+      },
+      {
+        "id": 2,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 3,
+        "projectDetails": "details pretaining to the current stage of the project",
+        "stageImg": ""
+      },
+      {
+        "id": 4,
+        "projectDetails": "details pretaining to the current stage of the project"
+      }
+    ]
+  }
+]
