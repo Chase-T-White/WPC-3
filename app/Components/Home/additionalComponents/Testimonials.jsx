@@ -33,8 +33,8 @@ const Testimonials = () => {
       } else {
         setIndex(index + 1);
       }
-      setCurrentTest(testimonials[index]);
-    }, 4000);
+    }, 10000);
+    setCurrentTest(testimonials[index]);
   }, [index, testimonials]);
 
   if (isLoading) {
@@ -42,39 +42,44 @@ const Testimonials = () => {
   }
 
   return (
-    <article className="w-full flex justify-center items-center">
-      <AnimatePresence>
-        <motion.div
-          variants={{
-            initial: {
-              x: "-100vw",
-            },
-            animate: {
-              x: 0,
-              transition: {
-                duration: 5,
-                type: "linear",
-                delay: 1,
+    <article className="w-full flex justify-center items-center py-20">
+      <div className="w-full max-w-[800px] h-[200px] flex items-center justify-center p-8 bg-bg-dark-orange">
+        <AnimatePresence>
+          <motion.div
+            variants={{
+              initial: {
+                opacity: 0,
               },
-            },
-            exit: {
-              opacity: 0,
-              transition: {
-                duration: 1,
-                type: "linear",
+              animate: {
+                opacity: 1,
+                transition: {
+                  duration: 1,
+                  type: "linear",
+                  delay: 1,
+                },
               },
-            },
-          }}
-          key={index}
-        >
-          <p>{currentTest.review}</p>
-          <p>
-            <small>
-              --<em>{currentTest.person}</em>, {currentTest.place}
-            </small>
-          </p>
-        </motion.div>
-      </AnimatePresence>
+              exit: {
+                opacity: 0,
+                transition: {
+                  duration: 1,
+                  type: "linear",
+                },
+              },
+            }}
+            key={index}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            <p>{currentTest.review}</p>
+            <p className="text-primary-color">
+              <small>
+                --<em>{currentTest.person}</em>, {currentTest.location}
+              </small>
+            </p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </article>
   );
 };

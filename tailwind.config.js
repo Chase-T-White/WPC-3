@@ -18,6 +18,8 @@ module.exports = {
       white: "fff",
       dark: "#141618",
       gray: "#4b4a48",
+      "bg-gradient-dark": "#1f1f1fc5",
+      "bg-dark-orange": "#1d1d1d",
     },
   },
   plugins: [],

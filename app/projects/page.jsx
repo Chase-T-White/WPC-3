@@ -15,7 +15,10 @@ const ProjectShowcase = () => {
         </p>
       </header>
       <article>{/* Featured Projects */}</article>
-      <article>{/* Projects gallery */}</article>
+      <article>
+        {/* Projects gallery */}
+        {/* Possibly add some filters/sorting */}
+      </article>
     </main>
   );
 };

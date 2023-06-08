@@ -6,7 +6,7 @@ const CTA = () => {
   return (
     <section>
       <h2>Let Us Bring Your Vision to Life. Schedule a Consultation Now!</h2>
-      <article>
+      <article className="flex">
         <div>
           <p>Availble Mon-Sat 8AM - 6PM</p>
           <div>
@@ -23,8 +23,7 @@ const CTA = () => {
           <h4>Send us an inquiry. We would love to hear from you!</h4>
           <form action="">
             <div>
-              <label htmlFor="name">Name</label>
-              <input type="text" />
+              <input type="text" placeholder="Name" />
             </div>
             <div>
               <label htmlFor="service">Service of Interest</label>
@@ -36,20 +35,18 @@ const CTA = () => {
               </select>
             </div>
             <div>
-              <label htmlFor="phone">Phone</label>
-              <input type="phone" />
+              <input type="phone" placeholder="Phone" />
             </div>
             <div>
-              <label htmlFor="email">Email</label>
-              <input type="email" />
+              <input type="email" placeholder="Email" />
             </div>
             <div>
-              <label htmlFor="message">Message</label>
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
+                placeholder="Message"
               ></textarea>
             </div>
             <div>

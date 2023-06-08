@@ -32,8 +32,8 @@ const Services = () => {
   let cardRow = 1;
 
   return (
-    <section className="h-screen grid grid-cols-2">
-      <article className="col-span-1 bg-white text-black overflow-hidden">
+    <section className="h-screen min-h-[800px] grid grid-cols-2">
+      <article className="col-span-1 bg-white text-black overflowx-hidden">
         <div className="relative max-w-[80%] h-full mx-auto">
           <h2 className="mt-32 mb-8">
             It's <span className="text-primary-color">Project Season</span>
@@ -50,15 +50,17 @@ const Services = () => {
             planning for the holidays now and let us transform your space with
             the magic of light!
           </p>
-          <button>
-            <Link href="#">CTA</Link>
-          </button>
-          <div className="absolute bottom-0 right-[-250px] w-[30vw] h-[30vw] -rotate-45">
+          <div>
+            <button className="btn btn__primary">
+              <Link href="#">Schedule A Consultation</Link>
+            </button>
+          </div>
+          <div className="absolute bottom-0 right-[-250px] w-[30vw] h-[30vw] -rotate-45 -z-10">
             <Image src={"/images/Home/services.svg"} fill />
           </div>
         </div>
       </article>
-      <article className="col-start-2 bg-gray grid grid-cols-[100px_1fr_1fr_100px] grid-rows-7 gap-8">
+      <article className="col-start-2 bg-gray grid grid-cols-[minmax(50px,_100px)_1fr_1fr_minmax(50px,_100px)] grid-rows-[50px_repeat(5,_1fr)_50px] gap-4 perspective">
         {services.map((service, i) => {
           if (cardCol === 3) {
             cardCol -= 1;

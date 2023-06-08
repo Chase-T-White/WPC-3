@@ -1,142 +1,129 @@
 [
   {
     "id": 1,
-    "projectName": "Project 1",
-    "shortDescription": "short description of project 1",
-    "projectOverview": "project overview text",
-    "beforeImg": "",
-    "afterImg": "",
+    "projectName": "Gen Stone & LP Smartside Remodel",
+    "shortDescription": "One of our favorite exterior remodel projects from this last summer! This Billings' classic is over 100 years old and sure looks sharp decked out in new @lpsmartside and @genstonediy!",
+    "projectOverview": "In this outside remodel project, we had the opportunity to transform a 100-year-old house into a modern and visually appealing residence. The homeowners approached us with a vision to revitalize their home's exterior, specifically focusing on updating the siding and the addition of partial stone pillars at the front. With a house of this age, our project manager anticipated potential challenges associated with preserving the historical integrity while incorporating contemporary elements. We carefully assessed the structural conditions, researched the best practices for seamless integration, and developed a comprehensive plan to bring the homeowners' dreams to life.",
+    "beforeImg": "/images/Projects/featured1/before.jpg",
+    "afterImg": "/images/Projects/featured1/after.jpg",
     "projectTimeline": [
       {
         "id": 1,
-        "projectDetails": "details pretaining to the current stage of the project"
+        "projectDetails": "During the initial stage of the outside remodel, we delicately removed the old siding from the 100-year-old house, taking extra care due to its historical significance. Our team employed meticulous precision to preserve architectural details and protect the underlying structure, setting the foundation for the transformative renovation to follow."
       },
       {
         "id": 2,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "In stage 2 of the project, we expertly installed the new siding, bringing a fresh look to the house while maintaining its timeless charm. To enhance the aesthetic appeal and add character, we carefully selected a stone look for the pillars, which complemented the overall design. This choice not only provided visual interest but also enhanced the durability and longevity of the pillars, ensuring they withstand the test of time.",
         "stageImg": ""
       },
       {
         "id": 3,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "In stage 3, we successfully completed the installation of the new siding and stone, giving the house a remarkable transformation. With the exterior now rejuvenated, we turned our attention to the meticulous task of scraping and repainting the remaining areas of the house. Our skilled team ensured every surface was prepared and painted to perfection, leaving the entire home looking refreshed and vibrant.",
         "stageImg": ""
       },
       {
         "id": 4,
-        "projectDetails": "details pretaining to the current stage of the project"
+        "projectDetails": "In the last stage, we brought the project to its glorious completion, delivering exceptional results that exceeded our client's expectations. This remodel project quickly became one of our favorites of the year, showcasing the perfect blend of craftsmanship, attention to detail, and transformation. It was a pleasure to work on this remarkable home and witness its stunning evolution."
       }
     ]
   },
   {
     "id": 2,
-    "projectName": "Project 2",
-    "shortDescription": "short description of project 2",
-    "projectOverview": "project overview text",
-    "beforeImg": "",
-    "afterImg": "",
+    "projectName": "Asphalt Roof Replacement",
+    "shortDescription": "Replacement of an aging asphalt roof.",
+    "projectOverview": "When the customers approached us for an asphalt roof replacement, they were seeking to enhance the durability, functionality, and aesthetic appeal of their home. The initial assessment of the project revealed some unique challenges, including the need to carefully remove the existing roof, address any underlying issues, and ensure proper installation of the new asphalt roof. Our team recognized the importance of meticulous planning, precise execution, and adherence to industry standards to deliver a long-lasting and visually appealing roof solution.",
+    "beforeImg": "/images/Projects/featured3/img1.jpg",
+    "afterImg": "/images/Projects/featured3/img4.jpg",
     "projectTimeline": [
       {
         "id": 1,
-        "projectDetails": "details pretaining to the current stage of the project"
+        "projectDetails": "During the initial stage of the project, we meticulously removed the old asphalt roof, ensuring a clean and solid foundation for the replacement. Thorough inspections were conducted to assess the underlying structure and identify any necessary repairs. Working closely with the customers, we assisted in selecting the ideal shingles that matched their desired aesthetics and provided optimal durability for their new roof."
       },
       {
         "id": 2,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "In the second stage of the project, our skilled team expertly installed the new roof, paying close attention to detail and quality craftsmanship. We ensured proper alignment and secure attachment of each shingle, providing a durable and long-lasting roof for the customers. Throughout the installation process, we maintained a clean and organized work environment, prioritizing safety and efficiency.",
         "stageImg": ""
       },
       {
         "id": 3,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "As the final stage of the project, we completed the installation of the new roof with precision and care. The customers were thrilled with the results, impressed by the meticulous craftsmanship and attention to detail. The project not only enhanced the aesthetic appeal of their home but also provided them with a reliable and durable roof, exceeding their expectations and ensuring their satisfaction.",
         "stageImg": ""
-      },
-      {
-        "id": 4,
-        "projectDetails": "details pretaining to the current stage of the project"
       }
     ]
   },
   {
     "id": 3,
-    "projectName": "Project 3",
-    "shortDescription": "short description of project 3",
-    "projectOverview": "project overview text",
-    "beforeImg": "",
-    "afterImg": "",
+    "projectName": "New Build Ceder Garden Shed Attachment",
+    "shortDescription": "This project involved the construction of a custom cedar garden shed attachment, designed to provide a functional and visually appealing space for storage and gardening activities.",
+    "projectOverview": "This project involved constructing a new cedar garden shed attachment, tailored to meet the specific needs and desires of the customer. With a focus on functionality and aesthetics, the customer aimed to create a versatile space for storage and gardening activities. White Peak Contracting embraced the challenge by designing a custom shed that seamlessly integrated with the existing landscape and complemented the overall architectural style of the property. The company's approach combined meticulous planning, skilled craftsmanship, and attention to detail to deliver a beautifully crafted garden shed that exceeded the customer's expectations.",
+    "beforeImg": "/images/Projects/featured4/before.jpg",
+    "afterImg": "/images/Projects/featured4/after.jpg",
     "projectTimeline": [
       {
         "id": 1,
-        "projectDetails": "details pretaining to the current stage of the project"
+        "projectDetails": "During the initial stage of the project, the customer expressed their desire for a functional garden shed attachment that would serve as a storage space for tools and equipment, as well as a workspace for gardening activities. White Peak Contracting carefully collaborated with the customer to understand their specific requirements and budget constraints. By leveraging their expertise in design and layout, the company proposed a tailored solution that optimized the use of space, incorporated cost-effective materials, and aligned with the customer's vision."
       },
       {
         "id": 2,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "During stage two of the project, White Peak Contracting focused on the construction of the cedar garden shed attachment. With meticulous attention to detail and craftsmanship, the team brought the design to life, ensuring structural integrity and seamless integration with the existing structure. By employing secure attachment methods and utilizing their expertise in construction techniques, the company successfully created a sturdy and visually appealing garden shed extension that complemented the overall aesthetic of the property.",
         "stageImg": ""
       },
       {
         "id": 3,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "Upon the completion of the project, White Peak Contracting felt a sense of pride and satisfaction in delivering a high-quality cedar garden shed attachment that exceeded the customer's expectations. The customer expressed their delight and appreciation for the company's attention to detail, professionalism, and ability to bring their vision to life. The successful collaboration between White Peak Contracting and the customer resulted in a beautiful and functional garden shed extension that will be enjoyed for years to come.",
         "stageImg": ""
-      },
-      {
-        "id": 4,
-        "projectDetails": "details pretaining to the current stage of the project"
       }
     ]
   },
   {
     "id": 4,
-    "projectName": "Project 4",
-    "shortDescription": "short description of project 4",
-    "projectOverview": "project overview text",
-    "beforeImg": "",
-    "afterImg": "",
+    "projectName": "Holiday Light Installation",
+    "shortDescription": "If you're on the far westend traveling Rimrock, keep an eye out for our largest tree job to date! 4,949 total feet and 16,940 total bulbs!",
+    "projectOverview": "When our clients approached us with their vision of a spectacular holiday light display, we knew it was going to be something special. Their desire to illuminate their large house and majestic trees posed an exciting challenge. We meticulously planned the installation, carefully considering the best techniques and approaches to highlight the architectural features and bring out the natural beauty of the trees. What began as a simple holiday light installation quickly grew into our largest and most enchanting display to date.",
+    "beforeImg": "/images/Projects/featured2/before.jpg",
+    "afterImg": "/images/Projects/featured2/after2.jpg",
     "projectTimeline": [
       {
         "id": 1,
-        "projectDetails": "details pretaining to the current stage of the project"
+        "projectDetails": "In the initial stage, we conducted meticulous measurements to estimate the required amount of lights, ensuring a seamless and captivating display. Additionally, we thoroughly inspected and tested the customer's existing lights, addressing any issues and replacing broken bulbs to guarantee optimal functionality. This attention to detail ensured a smooth installation process and a breathtaking end result."
       },
       {
         "id": 2,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "The installation stage involved a meticulous approach, prioritizing safety as we scaled the multiple stories of the home. Our team utilized specialized equipment and followed strict safety protocols to securely install the lights at great heights, ensuring the well-being of our crew members and the longevity of the display. For the majestic trees, we employed innovative techniques that combined safety and creativity, resulting in a breathtaking illumination that enchanted all who beheld it.",
         "stageImg": ""
       },
       {
         "id": 3,
-        "projectDetails": "details pretaining to the current stage of the project",
+        "projectDetails": "The final stage of the project marked the realization of a grand vision and surpassed all expectations. The stunning display of lights on the house and trees transformed the property into a captivating winter wonderland, delighting the customers and evoking a sense of awe in all who saw it. The success of this project further solidified our reputation as a leading provider of holiday light installations, and the joy and satisfaction expressed by the customers brought immense pride to our team.",
         "stageImg": ""
-      },
-      {
-        "id": 4,
-        "projectDetails": "details pretaining to the current stage of the project"
       }
     ]
   },
   {
     "id": 5,
-    "projectName": "Project 5",
-    "shortDescription": "short description of project 5",
-    "projectOverview": "project overview text",
+    "projectName": "LP Smartside Remodel",
+    "shortDescription": "Our smartside siding remodel project transformed an outdated exterior into a modern and stylish facade. With the durable and versatile smartside siding, we provided our clients with a low-maintenance solution that enhanced the curb appeal and value of their home.",
+    "projectOverview": "Our client approached us with a vision to revamp the exterior of their home with new siding. They wanted a durable and visually appealing solution that would enhance the overall aesthetic while providing protection against the elements. Our team worked closely with the client to understand their preferences and recommended smartside siding, known for its durability, versatility, and beautiful finish. We executed the project with precision, meticulously installing the smartside siding to transform their home's appearance. The result was a stunning transformation that exceeded the client's expectations, leaving them delighted with their revamped exterior.",
     "beforeImg": "",
     "afterImg": "",
-    "projectTimeline": [
-      {
-        "id": 1,
-        "projectDetails": "details pretaining to the current stage of the project"
-      },
-      {
-        "id": 2,
-        "projectDetails": "details pretaining to the current stage of the project",
-        "stageImg": ""
-      },
-      {
-        "id": 3,
-        "projectDetails": "details pretaining to the current stage of the project",
-        "stageImg": ""
-      },
-      {
-        "id": 4,
-        "projectDetails": "details pretaining to the current stage of the project"
-      }
-    ]
+    "projectTimeline": false
+  },
+  {
+    "id": 6,
+    "projectName": "140 Ton Gravel Installation",
+    "shortDescription": "Creating a durable and visually appealing surface around a client's shop with 140 tons of gravel.",
+    "projectOverview": "Our team undertook a challenging project of installing 140 tons of gravel to create a functional and aesthetically pleasing surface surrounding a client's shop. The goal was to create a durable, visually appealing area that could withstand heavy vehicle traffic. With meticulous planning and expert execution, we successfully transformed the space into a well-designed gravel surface that not only met the client's needs but exceeded their expectations.",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": false
+  },
+  {
+    "id": 7,
+    "projectName": "Hardy Exterior Remodel",
+    "shortDescription": "Revamping the exterior of this 10 year old three story house, that had been damaged by a hail storm.",
+    "projectOverview": "Our client approached us after their house was severely damaged by a hail storm, requiring extensive repairs and a complete siding replacement. They envisioned a modern and durable exterior that would enhance the overall aesthetics and protect their home from future weather challenges. Our team carefully assessed the damage, recommended hardy siding as the ideal solution, and worked closely with the client to select the perfect style and color. With meticulous installation and exceptional craftsmanship, we successfully transformed their three-story house into a beautiful, weather-resistant masterpiece, bringing their vision to life.",
+    "beforeImg": "",
+    "afterImg": "",
+    "projectTimeline": false
   }
 ]

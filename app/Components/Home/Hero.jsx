@@ -13,16 +13,20 @@ const Hero = () => {
         <source src="/videos/heroBg.mp4" type="video/mp4" />
         <source src="/videos/heroBg.webm" type="video/webm" />
       </video>
-      <div className="flex flex-col w-full h-full justify-center items-center">
-        <h1>White Peak Contracting</h1>
-        <h2>Bridging the Visionary Gap: Translating Ideas into Action</h2>
+      <div className="flex flex-col w-full max-w-[1200px] h-full mx-auto justify-center items-center">
+        <h1 className="text-center text-primary-color">
+          White Peak Contracting
+        </h1>
+        <h2 className="text-center mb-8">
+          Bridging the Visionary Gap: Translating Ideas into Action
+        </h2>
         <div>
-          <button>
-            <Link href="#">Explore Our Services</Link>
-          </button>
-          <button>
-            <Link href="#">View Our Portfolio</Link>
-          </button>
+          <Link href="#" className="btn btn__primary mr-16">
+            Explore Our Services
+          </Link>
+          <Link href="#" className="btn">
+            View Our Portfolio
+          </Link>
         </div>
       </div>
     </section>
