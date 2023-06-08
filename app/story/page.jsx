@@ -1,24 +1,20 @@
 import React from "react";
+import Image from "next/image";
 
 const Story = () => {
   return (
     <main>
-      <header>
-        <p>
-          At White Peak Contracting, our mission is to deliver exceptional
-          craftsmanship and superior customer service, transforming our clients'
-          visions into reality. We are driven by a passion for excellence,
-          attention to detail, and a commitment to exceeding expectations. With
-          each project we undertake, we strive to create spaces that inspire,
-          enhance functionality, and stand the test of time. We believe in
-          building lasting relationships based on trust, integrity, and open
-          communication. Together, let's build your dreams and redefine what's
-          possible.
-        </p>
-      </header>
-      <article>
-        <div>
-          <h3>Our Humble Origins</h3>
+      <article className="w-screen h-max min-h-[800px] grid grid-cols-[repeat(7,_1fr)] grid-rows-[200px_repeat(5,_1fr)_100px]">
+        <div className="relative col-span-full row-start-1 row-span-6">
+          <Image
+            src={"/images/About/snowRemoval.jpg"}
+            alt="Snow removal"
+            fill
+            className="object-cover object-center -z-10"
+          />
+        </div>
+        <div className="col-start-4 col-span-4 row-start-2 row-span-5 bg-bg-gradient-dark py-8 px-16">
+          <h3 className="text-primary-color">Our Humble Origins</h3>
           <p>
             Founded with a vision to leverage expertise and deliver exceptional
             services, White Peak Contracting emerged as a testament to ambition
@@ -50,8 +46,12 @@ const Story = () => {
             service in the industry for years to come.
           </p>
         </div>
-        <div>
-          <h3>Meet the Man, The Myth, The Founder</h3>
+      </article>
+      <article className="w-screen h-max min-h-[800px] grid grid-cols-[150px_repeat(7,_1fr)_150px] grid-rows-[100px_repeat(5,_1fr)_100px]">
+        <div className="col-start-4 col-span-3 row-start-2 row-span-5">
+          <h3 className="text-primary-color">
+            Meet the Man, The Myth, The Founder
+          </h3>
           <p>
             Dillon White, the founder of White Peak Contracting, is a true
             Montanan with deep roots in the majestic landscapes of the Big Sky
@@ -80,6 +80,26 @@ const Story = () => {
             remains at the forefront of our company, driving its growth and
             success.
           </p>
+        </div>
+        <div className="col-start-2 col-span-2 row-start-2 row-span-3 pr-12">
+          <div className="sticky top-0 w-full h-[66%]">
+            <Image
+              src={"/images/About/owner.jpg"}
+              alt="Owner Dillon White"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+        <div className="col-start-7 col-span-2 row-start-4 row-span-3 pl-12">
+          <div className="sticky top-0 w-full h-[66%]">
+            <Image
+              src={"/images/About/owner2.jpg"}
+              alt="Owner Dillon White"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
         </div>
       </article>
     </main>

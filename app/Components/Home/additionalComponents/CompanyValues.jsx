@@ -21,8 +21,6 @@ const CompanyValues = () => {
     }
   }, [isInView, mainControls]);
 
-  let delay = 0;
-
   //   Fetching data
 
   useEffect(() => {
@@ -56,7 +54,7 @@ const CompanyValues = () => {
               }}
               initial="initial"
               animate={mainControls}
-              transition={{ duration: 1, type: "linear" }}
+              transition={{ duration: 1, type: "linear", delay: i * 0.1 }}
             >
               {value.value}
             </motion.p>
