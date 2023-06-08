@@ -134,3 +134,7 @@ section {
 .previous {
   transform: translateX(100%);
 }
+
+.y {
+  color: #e6e6e6;
+}

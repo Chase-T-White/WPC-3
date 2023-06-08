@@ -45,7 +45,7 @@ const ProjectCarousal = () => {
   }
 
   return (
-    <article className="relative grid grid-cols-[minmax(50px,_100px)_5fr_minmax(50px,_100px)] grid-rows-[minmax(50px,_100px)_2fr_minmax(50px,_100px)] w-screen h-screen">
+    <article className="relative grid grid-cols-[minmax(50px,_100px)_5fr_minmax(50px,_100px)] grid-rows-[minmax(50px,_100px)_2fr_minmax(50px,_100px)] w-screen h-screen isolate">
       <div className="absolute left-0 top-0 flex items-center h-full w-[50px]">
         {<BsChevronLeft />}
       </div>
@@ -63,7 +63,7 @@ const ProjectCarousal = () => {
         return (
           <div
             key={i}
-            className={`relative col-start-2 row-start-2 w-full h-full -z-10 opacity-0 ${sliderPosition} transition-all duration-1000 ease-in-out`}
+            className={`relative col-start-2 row-start-2 w-full h-full -z-10 opacity-0 ${sliderPosition} transition-all duration-1000 ease-in-out text-white`}
           >
             <Image
               src={project.afterImg}
@@ -71,12 +71,14 @@ const ProjectCarousal = () => {
               fill
               className="object-cover object-center"
             />
-            <div className="absolute bottom-0 left-0 w-full pb-8 px-8 pt-16 bg-gradient-to-b from-[transparent] to-bg-gradient-dark to-10%">
+            <div className="absolute bottom-0 left-0 w-full pb-8 px-8 pt-16 bg-gradient-to-b from-[transparent] to-bg-gradient-dark to-10% z-10">
               <h5 className="mb-8">{project.projectName}</h5>
               <p className="max-w-[80ch] mb-4">{project.shortDescription}</p>
               <div>
                 <button className="btn btn__primary">
-                  <Link href="#">View Project Details</Link>
+                  <Link href={`/projects/${project.id}`}>
+                    View Project Details
+                  </Link>
                 </button>
               </div>
             </div>
