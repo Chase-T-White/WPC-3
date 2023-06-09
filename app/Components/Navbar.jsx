@@ -81,16 +81,16 @@ const Navbar = () => {
               onClick={() => setShowDropdown(false)}
             >
               <div>
-                <Link href={"lbp/contracting"}>General Contracting</Link>
+                <Link href={"services/contracting"}>General Contracting</Link>
               </div>
               <div>
-                <Link href={"lbp/builds"}>Build / Upgrade</Link>
+                <Link href={"services/builds"}>Build / Upgrade</Link>
               </div>
               <div>
-                <Link href={"lbp/oelo"}>OELO Lighting Solutions</Link>
+                <Link href={"services/oelo"}>OELO Lighting Solutions</Link>
               </div>
               <div>
-                <Link href={"lbp/lights"}>Holiday Lighting</Link>
+                <Link href={"services/lights"}>Holiday Lighting</Link>
               </div>
             </div>
           </li>
