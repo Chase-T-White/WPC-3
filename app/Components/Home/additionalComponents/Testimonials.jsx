@@ -42,7 +42,7 @@ const Testimonials = () => {
   }
 
   return (
-    <article className="w-full flex justify-center items-center py-20">
+    <article className="w-full flex justify-center items-center py-8">
       <div className="w-full max-w-[800px] h-[200px] flex items-center justify-center p-8 bg-bg-dark-orange">
         <AnimatePresence>
           <motion.div

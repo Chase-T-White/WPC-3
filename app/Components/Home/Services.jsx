@@ -32,10 +32,10 @@ const Services = () => {
   let cardRow = 1;
 
   return (
-    <section className="h-screen min-h-[800px] grid grid-cols-2">
-      <article className="col-span-1 bg-white text-black overflowx-hidden">
-        <div className="relative max-w-[80%] h-full mx-auto">
-          <h2 className="mt-32 mb-8">
+    <section className="h-screen min-h-[800px] grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1">
+      <article className="row-start-1 col-span-1 text-black overflow-hidden bg-gray lg:bg-transparent">
+        <div className="relative sm:max-w-[80%] h-full mx-auto py-8 lg:py-0">
+          <h2 className="lg:mt-32 lg:mb-8">
             It's <span className="text-primary-color">Project Season</span>
           </h2>
           <p className="max-w-[60ch] mb-[24px]">
@@ -60,7 +60,7 @@ const Services = () => {
           </div>
         </div>
       </article>
-      <article className="col-start-2 bg-gray grid grid-cols-[minmax(50px,_100px)_1fr_1fr_minmax(50px,_100px)] grid-rows-[50px_repeat(5,_1fr)_50px] gap-4 perspective">
+      <article className="row-start-2 lg:row-start-1 lg:col-start-2 bg-gray grid grid-cols-[50px_1fr_1fr_50px] grid-rows-[50px_repeat(5,_1fr)_50px] gap-4">
         {services.map((service, i) => {
           if (cardCol === 3) {
             cardCol -= 1;

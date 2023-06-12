@@ -43,11 +43,12 @@ const CompanyValues = () => {
   }
 
   return (
-    <ul ref={ref} className="h-full mx-16">
+    <ul ref={ref} className="h-full mx-0 md:mx-8 lg:mx-16 pt-8 md:pt-0">
       {valueProps.map((value, i) => {
         return (
           <li key={i} className="mb-4 overflow-hidden">
-            <motion.p
+            <p
+              className="text-sm lg:text-base xl:text-xl"
               variants={{
                 initial: { y: "-100%" },
                 visible: { y: 0 },
@@ -57,7 +58,7 @@ const CompanyValues = () => {
               transition={{ duration: 1, type: "linear", delay: i * 0.1 }}
             >
               {value.value}
-            </motion.p>
+            </p>
           </li>
         );
       })}

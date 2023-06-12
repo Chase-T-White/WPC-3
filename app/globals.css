@@ -27,12 +27,7 @@
 body {
   font-family: "Merriweather", "serif" !important;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #2b2a33;
   overflow-x: hidden;
 }
 
@@ -45,15 +40,6 @@ h6,
 a,
 button {
   font-family: "Roboto", "sans-serif" !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primary-color) !important;
 }
 
 h1 {
@@ -89,7 +75,7 @@ ol {
 }
 
 section {
-  margin-bottom: 15rem;
+  margin-bottom: 8rem;
 }
 
 .btn {
@@ -104,6 +90,10 @@ section {
 .btn:hover,
 .btn:focus {
   background-color: var(--dark);
+}
+
+.btn__sm {
+  padding: 0 1rem;
 }
 
 .btn__primary {
