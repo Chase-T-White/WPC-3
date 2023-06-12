@@ -4,22 +4,24 @@ import { IoMdMail } from "react-icons/io";
 
 const CTA = () => {
   return (
-    <section>
-      <h2>Let Us Bring Your Vision to Life. Schedule a Consultation Now!</h2>
-      <article className="flex">
-        <div>
+    <section className="px-[50px] cta pt-8 pb-12">
+      <h2 className="text-primary-color text-center mb-16">
+        Let Us Bring Your Vision to Life. Schedule a Consultation Now!
+      </h2>
+      <article className="grid grid-cols-2">
+        <div className="flex flex-col h-full w-full items-center justify-center text-center">
           <p>Availble Mon-Sat 8AM - 6PM</p>
           <div>
             <p>Give us a call or send us an email</p>
-            <div>
+            <div className="w-fit">
               <BsFillTelephoneFill /> (406) 697-7202
             </div>
-            <div>
+            <div className="w-fit">
               <IoMdMail /> whitepeakohs@gmail.com
             </div>
           </div>
         </div>
-        <div>
+        <div className="max-w-[80ch]">
           <h4>Send us an inquiry. We would love to hear from you!</h4>
           <form action="">
             <div>

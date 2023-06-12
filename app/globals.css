@@ -137,3 +137,16 @@ section {
 .y {
   color: #e6e6e6;
 }
+
+/* CTA */
+
+.cta {
+  background-image: linear-gradient(
+      var(--bg-gradient-dark),
+      var(--bg-gradient-dark)
+    ),
+    url("/images/ctaBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

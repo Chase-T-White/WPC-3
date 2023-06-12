@@ -35,7 +35,7 @@ const ProjectCarousal = () => {
     const timer = setTimeout(() => {
       setIndex(increaseIndex(index, featuredProjects));
       return setCurrentProject(featuredProjects[index]);
-    }, 6000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, [index, featuredProjects]);
@@ -46,7 +46,7 @@ const ProjectCarousal = () => {
 
   return (
     <article className="relative grid grid-cols-[minmax(50px,_100px)_5fr_minmax(50px,_100px)] grid-rows-[minmax(50px,_100px)_2fr_minmax(50px,_100px)] w-screen h-screen isolate">
-      <div className="absolute left-0 top-0 flex items-center h-full w-[50px]">
+      <div className="absolute left-0 top-0 flex items-center h-full w-[50px] z-50 text-primary-color text-6xl">
         {<BsChevronLeft />}
       </div>
       {featuredProjects.map((project, i) => {
@@ -63,7 +63,7 @@ const ProjectCarousal = () => {
         return (
           <div
             key={i}
-            className={`relative col-start-2 row-start-2 w-full h-full -z-10 opacity-0 ${sliderPosition} transition-all duration-1000 ease-in-out text-white`}
+            className={`relative col-span-3 lg:col-start-2 lg:col-span-1 row-start-2 w-full h-full z-10 opacity-0 ${sliderPosition} transition-all duration-1000 ease-in-out text-white`}
           >
             <Image
               src={project.afterImg}
@@ -85,7 +85,7 @@ const ProjectCarousal = () => {
           </div>
         );
       })}
-      <div className="absolute right-0 top-0 flex items-center h-full w-[50px]">
+      <div className="absolute right-0 top-0 flex items-center h-full w-[50px] z-50 text-primary-color text-6xl">
         {<BsChevronRight />}
       </div>
     </article>

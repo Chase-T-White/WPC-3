@@ -15,7 +15,7 @@ const ServiceCategoryCard = ({
         gridColumn: gridStyleCol,
         gridRowStart: gridStyleRow,
       }}
-      className="flex items-end relative row-span-2 bg-dark isolate rounded-lg shadow-xl overflow-hidden"
+      className="flex items-end relative row-span-2 bg-dark isolate rounded-lg shadow-xl overflow-hidden min-h-[350px]"
     >
       <div className="absolute w-full h-full -z-10">
         <Image
