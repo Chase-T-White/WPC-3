@@ -4,7 +4,7 @@ import Image from "next/image";
 const Story = () => {
   return (
     <main>
-      <article className="w-screen h-max min-h-[800px] grid grid-cols-[repeat(7,_1fr)] grid-rows-[200px_repeat(5,_1fr)_100px]">
+      <article className="w-screen h-max min-h-[800px] grid grid-cols-[repeat(7,_1fr)] grid-rows-[400px_repeat(5,_1fr)_100px]">
         <div className="relative col-span-full row-start-1 row-span-6">
           <Image
             src={"/images/About/snowRemoval.jpg"}
@@ -13,8 +13,8 @@ const Story = () => {
             className="object-cover object-center -z-10"
           />
         </div>
-        <div className="col-start-4 col-span-4 row-start-2 row-span-5 bg-bg-gradient-dark py-8 px-16">
-          <h3 className="text-primary-color">Our Humble Origins</h3>
+        <div className="col-start-4 col-span-4 row-start-2 row-span-5 bg-bg-gradient-dark p-16">
+          <h3 className="text-primary-color mb-12">Our Humble Origins</h3>
           <p>
             Founded with a vision to leverage expertise and deliver exceptional
             services, White Peak Contracting emerged as a testament to ambition
@@ -47,9 +47,9 @@ const Story = () => {
           </p>
         </div>
       </article>
-      <article className="w-screen h-max min-h-[800px] grid grid-cols-[150px_repeat(7,_1fr)_150px] grid-rows-[100px_repeat(5,_1fr)_100px]">
-        <div className="col-start-4 col-span-3 row-start-2 row-span-5">
-          <h3 className="text-primary-color">
+      <article className="w-screen h-max min-h-[800px] grid grid-cols-[minmax(10px,_50px)_minmax(250px,_1fr)_minmax(10px,_50px)] md:grid-cols-[50px_repeat(2,_minmax(130px,_1fr))_repeat(5,_minmax(80px,_1fr))_50px] xl:grid-cols-[minmax(50px,_150px)_repeat(7,_minmax(165px,_1fr))_minmax(50px,_150px)] grid-rows-[100px_repeat(5,_1fr)_100px]">
+        <div className="col-start-2 md:col-start-4 md:col-span-5 xl:col-span-3 row-start-3 row-span-5 md:row-start-2 md:row-span-5">
+          <h3 className="text-primary-color mb-12">
             Meet the Man, The Myth, The Founder
           </h3>
           <p>
@@ -81,17 +81,17 @@ const Story = () => {
             success.
           </p>
         </div>
-        <div className="col-start-2 col-span-2 row-start-2 row-span-3 pr-12">
-          <div className="sticky top-0 w-full h-[66%]">
+        <div className="mx-auto col-start-2 md:col-start-2 md:col-span-2 row-start-1 row-span-2 md:row-start-2 md:row-span-5 xl:row-start-2 xl:row-span-3 pr-12">
+          <div className="sticky top-0 w-[300px] md:w-full h-[300px] md:h-[66%] mb-12 md:mb-0">
             <Image
               src={"/images/About/owner.jpg"}
               alt="Owner Dillon White"
               fill
-              className="object-cover object-center"
+              className="object-contain object-top"
             />
           </div>
         </div>
-        <div className="col-start-7 col-span-2 row-start-4 row-span-3 pl-12">
+        <div className="hidden xl:block col-start-7 col-span-2 row-start-4 row-span-3 pl-12">
           <div className="sticky top-0 w-full h-[66%]">
             <Image
               src={"/images/About/owner2.jpg"}

@@ -7,30 +7,25 @@ import {
   AiFillLinkedin,
   AiOutlinePhone,
   AiOutlineMail,
-  AiOutlineCloseSquare,
 } from "react-icons/ai";
 
-const SideModalNav = ({ setShowDropdown, showDropdown, setNavOpen }) => {
+const SideModalNav = ({ setShowDropdown, showDropdown }) => {
   return (
-    <div>
-      <div
-        className="inline-block absolute top-4 right-4 text-primary-color text-4xl z-10"
-        onClick={() => setNavOpen(false)}
-      >
-        <AiOutlineCloseSquare />
-      </div>
+    <div className="absolute top-full right-0 bg-dark px-4 pb-4">
       <ul className="relative flex flex-col gap-8 py-8 nav-menuHidden">
         <li
           tabIndex={0}
-          className="flex items-center gap-[2px] text-dark cursor-pointer"
+          className="flex flex-col gap-[2px] text-white cursor-pointer"
           onClick={() => setShowDropdown(!showDropdown)}
         >
-          Services
-          <AiFillCaretDown className="text-primary-color" />
+          <div className="flex">
+            Services
+            <AiFillCaretDown className="text-primary-color" />
+          </div>
           <div
-            className={`text-dark cursor-pointer ${
+            className={`text-white cursor-pointer ${
               showDropdown
-                ? "absolute top-full left-0 flex justify-between w-full py-4 px-8 mt-[8px]"
+                ? "flex flex-col justify-between gap-4 w-full py-4 px-8 mt-[8px]"
                 : "hidden"
             }`}
             onClick={() => setShowDropdown(false)}
@@ -49,17 +44,17 @@ const SideModalNav = ({ setShowDropdown, showDropdown, setNavOpen }) => {
             </div>
           </div>
         </li>
-        <li className="text-dark cursor-pointer">
+        <li className="text-white cursor-pointer">
           <Link href={"/projects"}>Portfolio</Link>
         </li>
-        <li className="text-dark cursor-pointer">
+        <li className="text-white cursor-pointer">
           <Link href={"/story"}>Our Story</Link>
         </li>
         <li className="text-primary-color cursor-pointer">
           <Link href={"/contact"}>Get In Touch</Link>
         </li>
       </ul>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-[4px] mb-[4px]">
         <div tabIndex={0} className="flex items-center gap-4">
           <AiOutlinePhone className="text-primary-color text-xl" />
           (406) 697-7202

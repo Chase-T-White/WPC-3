@@ -12,6 +12,7 @@ import {
   AiFillLinkedin,
   AiOutlinePhone,
   AiOutlineMail,
+  AiOutlineCloseSquare,
 } from "react-icons/ai";
 import { IoMdMenu } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
@@ -66,9 +67,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-0 left-0 bg-bg-gradient-dark z-10 flex px-4 py-[8px] w-screen">
+    <nav className="absolute top-0 left-0 bg-bg-gradient-dark z-10 flex w-screen">
       <div className="flex flex-col w-full hidden sm:block">
-        <div className="flex items-center py-4">
+        <div className="flex items-center py-[24px] px-4 bg-dark">
           <div className="flex grow gap-12">
             <div tabIndex={0} className="flex items-center gap-4">
               <AiOutlinePhone className="text-primary-color text-xl" />
@@ -112,7 +113,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex py-4 px-4">
           <div className="nav-logo">
             <Link href={"/"}>
               <Image
@@ -170,7 +171,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center w-full sm:hidden">
+      <div className="flex items-center w-full sm:hidden p-4">
         <div className="nav-logo grow">
           <Link href={"/"}>
             <Image
@@ -183,17 +184,25 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="nav-iconContainer">
-          <IoMdMenu
-            tabIndex={0}
-            title="Click for Menu"
-            className="nav-icon text-primary-color text-6xl"
-            onClick={() => setNavOpen(true)}
-          />
+          {!navOpen ? (
+            <IoMdMenu
+              tabIndex={0}
+              title="Click for Menu"
+              className="nav-icon text-primary-color text-6xl cursor-pointer"
+              onClick={() => setNavOpen(true)}
+            />
+          ) : (
+            <AiOutlineCloseSquare
+              tabIndex={0}
+              title="Close"
+              className="nav-icon text-primary-color text-6xl cursor-pointer"
+              onClick={() => setNavOpen(false)}
+            />
+          )}
         </div>
       </div>
       {navOpen && (
         <SideModalNav
-          setNavOpen={setNavOpen}
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
         />

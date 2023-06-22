@@ -13,7 +13,7 @@
   --white: #fff;
   --dark: #141618;
   --gray: #4b4a48;
-  --bg-gradient-dark: #1f1f1fc5;
+  --bg-gradient-dark: #1f1f1fd5;
 }
 
 @media (prefers-color-scheme: dark) {
