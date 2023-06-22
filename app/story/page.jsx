@@ -4,7 +4,7 @@ import Image from "next/image";
 const Story = () => {
   return (
     <main>
-      <article className="w-screen h-max min-h-[800px] grid grid-cols-[repeat(7,_1fr)] grid-rows-[400px_repeat(5,_1fr)_100px]">
+      <article className="w-screen h-max min-h-[800px] grid grid-cols-[repeat(7,_1fr)] grid-rows-[200px_repeat(5,_1fr)_50px] md:grid-rows-[400px_repeat(5,_1fr)_100px]">
         <div className="relative col-span-full row-start-1 row-span-6">
           <Image
             src={"/images/About/snowRemoval.jpg"}
@@ -13,7 +13,7 @@ const Story = () => {
             className="object-cover object-center -z-10"
           />
         </div>
-        <div className="col-start-4 col-span-4 row-start-2 row-span-5 bg-bg-gradient-dark p-16">
+        <div className="col-span-full md:col-start-2 md:col-span-6 lg:col-start-4 lg:col-span-4 row-start-2 row-span-5 bg-bg-gradient-dark py-16 px-4 md:p-16">
           <h3 className="text-primary-color mb-12">Our Humble Origins</h3>
           <p>
             Founded with a vision to leverage expertise and deliver exceptional
@@ -81,7 +81,7 @@ const Story = () => {
             success.
           </p>
         </div>
-        <div className="mx-auto col-start-2 md:col-start-2 md:col-span-2 row-start-1 row-span-2 md:row-start-2 md:row-span-5 xl:row-start-2 xl:row-span-3 pr-12">
+        <div className="mx-auto md:mx-0 col-start-2 md:col-start-2 md:col-span-2 row-start-1 row-span-2 md:row-start-2 md:row-span-5 xl:row-start-2 xl:row-span-3 pr-12">
           <div className="sticky top-0 w-[300px] md:w-full h-[300px] md:h-[66%] mb-12 md:mb-0">
             <Image
               src={"/images/About/owner.jpg"}

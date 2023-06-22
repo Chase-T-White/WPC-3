@@ -14,7 +14,7 @@ const PageHeader = ({ heading, text, image }) => {
           />
         </div>
         <div className="flex items-center col-start-4 col-span-4 row-start-2">
-          <div className="bg-bg-gradient-dark text-white">
+          <div className="bg-bg-gradient-dark text-white py-8 px-16">
             <h2 className="text-primary-color">{heading}</h2>
             <p>{text}</p>
           </div>
