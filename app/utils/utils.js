@@ -1,13 +1,13 @@
-export const increaseIndex = (index, array) => {
-  if (index === array.length - 1) {
+export const increaseIndex = (index, arrayLength) => {
+  if (index === arrayLength - 1) {
     return 0;
   }
   return index + 1;
 };
 
-export const decreaseIndex = (index, array) => {
+export const decreaseIndex = (index, arrayLength) => {
   if (index === 0) {
-    return array.length - 1;
+    return arrayLength - 1;
   }
   return index - 1;
 };

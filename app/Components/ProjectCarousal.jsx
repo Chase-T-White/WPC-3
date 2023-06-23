@@ -33,7 +33,7 @@ const ProjectCarousal = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIndex(increaseIndex(index, featuredProjects));
+      setIndex(increaseIndex(index, featuredProjects.length));
       return setCurrentProject(featuredProjects[index]);
     }, 10000);
 
@@ -45,8 +45,14 @@ const ProjectCarousal = () => {
   }
 
   return (
-    <article className="relative grid grid-cols-[minmax(50px,_100px)_5fr_minmax(50px,_100px)] grid-rows-[minmax(50px,_100px)_2fr_minmax(50px,_100px)] w-screen h-screen isolate">
-      <div className="absolute left-0 top-0 flex items-center h-full w-[50px] z-50 text-primary-color text-6xl">
+    <article className="relative grid grid-cols-[minmax(25px,_100px)_minmax(250px,_5fr)_minmax(25px,_100px)] grid-rows-[minmax(50px,_100px)_2fr_minmax(50px,_100px)] w-screen h-screen isolate">
+      <div
+        className="col-start-1 row-start-1 row-span-2 lg:row-start-2 lg:row-span-1 flex items-center justify-center h-full w-full z-50 text-primary-color-light text-6xl cursor-pointer hover:text-primary-color hover:bg-gradient-to-r from-bg-gradient-dark to-transparent"
+        onClick={() => {
+          setIndex(decreaseIndex(index, featuredProjects.length));
+          return setCurrentProject(featuredProjects[index]);
+        }}
+      >
         {<BsChevronLeft />}
       </div>
       {featuredProjects.map((project, i) => {
@@ -63,7 +69,7 @@ const ProjectCarousal = () => {
         return (
           <div
             key={i}
-            className={`relative col-span-3 lg:col-start-2 lg:col-span-1 row-start-2 w-full h-full z-10 opacity-0 ${sliderPosition} transition-all duration-1000 ease-in-out text-white`}
+            className={`relative col-start-1 col-span-3 lg:col-start-2 lg:col-span-1 row-start-1 row-span-2 lg:row-start-2 lg:row-span-1 w-full h-full z-10 opacity-0 ${sliderPosition} transition-all duration-1000 ease-in-out text-white`}
           >
             <Image
               src={project.afterImg}
@@ -85,7 +91,13 @@ const ProjectCarousal = () => {
           </div>
         );
       })}
-      <div className="absolute right-0 top-0 flex items-center h-full w-[50px] z-50 text-primary-color text-6xl">
+      <div
+        className="col-start-3 row-start-1 row-span-2 lg:row-start-2 lg:row-span-1 flex items-center justify-center h-full w-full z-50 text-primary-color-light text-6xl cursor-pointer hover:text-primary-color hover:bg-gradient-to-l from-bg-gradient-dark to-transparent"
+        onClick={() => {
+          setIndex(increaseIndex(index, featuredProjects.length));
+          return setCurrentProject(featuredProjects[index]);
+        }}
+      >
         {<BsChevronRight />}
       </div>
     </article>

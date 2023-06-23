@@ -12,7 +12,9 @@ const page = () => {
       <PageHeader heading={heading} text={text} image={image} />
       <section>
         <article className="w-screen max-w-[1200px] mx-auto">
-          <h3 className="text-center mb-4">Well, What Do You Need Done?</h3>
+          <h3 className="text-center mb-4 text-primary-color">
+            Well, What Do You Need Done?
+          </h3>
           <div>
             <p className="mb-16">
               That's our simple pitch to anyone that asks what it is that we do.
