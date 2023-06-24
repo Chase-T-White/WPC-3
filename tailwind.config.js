@@ -22,6 +22,7 @@ module.exports = {
       "bg-light": "#e6e6e6",
       "bg-gradient-dark": "#1f1f1fd5",
       "bg-dark-orange": "#1d1d1d",
+      "bg-color-tint": "#464453",
     },
   },
   plugins: [],

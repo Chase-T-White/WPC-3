@@ -21,6 +21,9 @@ const ValueProp = () => {
   return (
     <section ref={sectionRef} className="w-screen min-h-screen min-h-[600px]">
       <article className="grid grid-cols-[25px_1fr_25px] md:grid-cols-2 grid-rows-2 md:grid-rows-[1fr_3fr_1fr]">
+        <h2 className="col-start-2 row-start-1 row-span-3 text-[250px] leading-tight translate-x-8 -z-10 text-bg-color-tint overflow-hidden">
+          Our Values
+        </h2>
         <div className="relative col-start-2 md:col-start-1 row-start-1 md:row-start-2 overflow-hidden isolate ">
           <Image
             alt="Front of a nice house during the summer"

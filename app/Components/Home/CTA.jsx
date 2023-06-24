@@ -21,13 +21,15 @@ const CTA = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[80ch]">
-          <h4>Send us an inquiry. We would love to hear from you!</h4>
-          <form action="">
+        <div className="max-w-[600px] bg-bg-gradient-dark py-16 px-8">
+          <h4 className="text-primary-color mb-12">
+            Send us an inquiry. We would love to hear from you!
+          </h4>
+          <form className="flex flex-col gap-4">
             <div>
               <input type="text" placeholder="Name" />
             </div>
-            <div>
+            <div className="flex flex-col gap-[8px]">
               <label htmlFor="service">Service of Interest</label>
               <select name="service" id="service">
                 <option value="general">General</option>

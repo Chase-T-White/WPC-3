@@ -1,25 +1,12 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const CompanyValues = () => {
   const ref = useRef();
   const [valueProps, setValueProps] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
-  //  InView animations
-
-  const isInView = useInView(ref, { once: true, amount: "some" });
-  const mainControls = useAnimation();
-
-  console.log(isInView);
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView, mainControls]);
 
   //   Fetching data
 
@@ -46,20 +33,17 @@ const CompanyValues = () => {
     <ul ref={ref} className="h-full mx-0 md:mx-8 lg:mx-16 pt-8 md:pt-0">
       {valueProps.map((value, i) => {
         return (
-          <li key={i} className="mb-4 overflow-hidden">
-            <p
+          <motion.li key={i} className="mb-4 overflow-hidden">
+            <motion.p
+              initial={{ y: "-100%" }}
+              whileInView={{ y: 0 }}
+              transition={{ duration: 1, type: "linear", delay: i * 0.2 }}
+              viewport={{ once: true }}
               className="text-sm lg:text-base xl:text-xl"
-              variants={{
-                initial: { y: "-100%" },
-                visible: { y: 0 },
-              }}
-              initial="initial"
-              animate={mainControls}
-              transition={{ duration: 1, type: "linear", delay: i * 0.1 }}
             >
               {value.value}
-            </p>
-          </li>
+            </motion.p>
+          </motion.li>
         );
       })}
     </ul>

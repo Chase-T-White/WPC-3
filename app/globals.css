@@ -15,6 +15,8 @@
   --dark: #141618;
   --gray: #4b4a48;
   --bg-gradient-dark: #1f1f1fd5;
+  --bg-color: #2b2a33;
+  --bg-color-tint: #464453;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +30,7 @@
 body {
   font-family: "Merriweather", "serif" !important;
   color: rgb(var(--foreground-rgb));
-  background-color: #2b2a33;
+  background-color: var(--bg-color);
   overflow-x: hidden;
 }
 

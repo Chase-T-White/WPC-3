@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ServiceCategoryCard from "./additionalComponents/ServiceCategoryCard";
 import Image from "next/image";
 import Link from "next/link";
 
 const Services = () => {
+  const ref = useRef();
   const [services, setServices] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -60,7 +61,10 @@ const Services = () => {
           </div>
         </div>
       </article>
-      <article className="row-start-2 lg:row-start-1 lg:col-start-2 bg-gray grid grid-cols-[25px_1fr_25px] min-[550px]:grid-cols-[50px_1fr_1fr_50px] min-[550px]:grid-rows-[50px_repeat(5,_1fr)_50px] gap-4">
+      <article
+        ref={ref}
+        className="row-start-2 lg:row-start-1 lg:col-start-2 bg-gray grid grid-cols-[25px_1fr_25px] min-[550px]:grid-cols-[50px_1fr_1fr_50px] min-[550px]:grid-rows-[50px_repeat(5,_1fr)_50px] gap-4"
+      >
         {services.map((service, i) => {
           if (cardCol === 3) {
             cardCol -= 1;
