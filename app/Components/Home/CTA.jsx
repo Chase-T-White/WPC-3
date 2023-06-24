@@ -25,13 +25,21 @@ const CTA = () => {
           <h4 className="text-primary-color mb-12">
             Send us an inquiry. We would love to hear from you!
           </h4>
-          <form className="flex flex-col gap-4">
+          <form className="flex flex-col gap-4 max-w-[400px]">
             <div>
-              <input type="text" placeholder="Name" />
+              <input
+                className="w-full p-[4px] pb-0 text-2xl bg-transparent"
+                type="text"
+                placeholder="Name"
+              />
             </div>
             <div className="flex flex-col gap-[8px]">
               <label htmlFor="service">Service of Interest</label>
-              <select name="service" id="service">
+              <select
+                className="w-fit bg-transparent"
+                name="service"
+                id="service"
+              >
                 <option value="general">General</option>
                 <option value="project">Build/Remodel</option>
                 <option value="oelo">OELO Lighting</option>
@@ -39,22 +47,32 @@ const CTA = () => {
               </select>
             </div>
             <div>
-              <input type="phone" placeholder="Phone" />
+              <input
+                className="w-full p-[4px] pb-0 text-2xl bg-transparent"
+                type="phone"
+                placeholder="Phone"
+              />
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input
+                className="w-full p-[4px] pb-0 text-2xl bg-transparent"
+                type="email"
+                placeholder="Email"
+              />
             </div>
             <div>
               <textarea
+                className="w-full"
                 name="message"
                 id="message"
-                cols="30"
                 rows="10"
                 placeholder="Message"
               ></textarea>
             </div>
             <div>
-              <button type="submit">Send</button>
+              <button className="btn btn__primary" type="submit">
+                Send
+              </button>
             </div>
           </form>
         </div>
