@@ -29,12 +29,12 @@ const Project = ({ params }) => {
   }
 
   return (
-    <main className="w-screen max-w-[1200px] mx-auto">
-      <header className="mt-[200px] mb-28">
-        <h2 className="text-center text-primary-color">
+    <main className="w-screen max-w-[1400px] mx-auto">
+      <header className="mt-[300px] mb-28">
+        <h2 className="text-center text-primary-color mb-8">
           {project.projectName}
         </h2>
-        <div>
+        <div className="max-w-[100ch] mx-auto">
           <p>{project.projectOverview}</p>
         </div>
       </header>
@@ -57,16 +57,20 @@ const Project = ({ params }) => {
           return (
             <article
               key={i}
-              className={`border-b-2 border-b-solid border-b-primary-color ${
+              className={`border-b-2 border-dashed border-b-primary-color ${
                 i % 2 === 0
-                  ? "border-r-primary-color border-r-2 border-r-solid"
-                  : "border-l-primary-color border-l-2 border-l-solid"
+                  ? "border-r-primary-color border-r-2"
+                  : "border-l-primary-color border-l-2"
               } py-64 px-8 grid grid-cols-2 gap-24`}
             >
-              <div className={`${i % 2 !== 0 ? "col-start-2" : ""}`}>
+              <div
+                className={`flex flex-col justify-center ${
+                  i % 2 !== 0 ? "col-start-2" : ""
+                }`}
+              >
                 <p>{stage.projectDetails}</p>
                 {lastStage && (
-                  <div className="flex gap-16">
+                  <div className="flex gap-16 mt-12">
                     <button className="btn btn__primary">
                       <Link href="/contact">Schedule a Consultation</Link>
                     </button>
@@ -77,7 +81,7 @@ const Project = ({ params }) => {
                 )}
               </div>
               <div
-                className={`relative ${
+                className={`relative min-h-[250px] h-[75vh] ${
                   i % 2 !== 0 ? "col-start-1 row-start-1" : ""
                 }`}
               >
