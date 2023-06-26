@@ -14,6 +14,7 @@
   --white: #fff;
   --dark: #141618;
   --gray: #4b4a48;
+  --bg-gradient-light: #1f1f1f71;
   --bg-gradient-dark: #1f1f1fd5;
   --bg-color: #2b2a33;
   --bg-color-tint: #464453;
@@ -176,4 +177,93 @@ form textarea:focus-visible {
 
 .holiday-light-card {
   background-color: var(--dark);
+}
+
+/* General Contracting Skills List */
+
+.generalSkills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(250px, 1fr);
+  gap: 3rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  background-size: cover;
+  background-position: center;
+}
+
+#siding {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/siding.jpg);
+}
+#stone {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/stone.jpg);
+}
+#window {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/windows.jpg);
+}
+#framing {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/framing.jpg);
+}
+#deck {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/deck.jpg);
+}
+#paint {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/paint.jpg);
+}
+#kitchen {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/kitchen.jpg);
+}
+#flooring {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/flooring.jpg);
+}
+#fineCarp {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/fineCarpentry.jpg);
+}
+#logCarp {
+  background-image: linear-gradient(
+      var(--bg-gradient-light),
+      var(--bg-gradient-light)
+    ),
+    url(/images/Services/General/log.jpg);
 }

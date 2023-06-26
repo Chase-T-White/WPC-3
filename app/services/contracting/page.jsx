@@ -12,7 +12,7 @@ const page = () => {
     <main>
       <PageHeader heading={heading} text={text} image={image} />
       <section>
-        <article className="w-screen max-w-[1200px] mx-auto">
+        <article className="w-screen max-w-[1400px] mx-auto">
           <h2 className="text-center mb-4 text-primary-color mb-12">
             Well, What Do You Need Done?
           </h2>
@@ -29,23 +29,27 @@ const page = () => {
             <div className="flex justify-center items-center mb-40">
               <GiPolarStar className="text-primary-color text-4xl" />
             </div>
-            <div>
-              <h3 className="text-primary-color">We Have Experience In:</h3>
-              <ul>
-                <li>Siding</li>
-                <li>Stone</li>
-                <li>Windows</li>
-                <li>Framing/Sheeting</li>
-                <li>Deck Construction/Replacement</li>
-                <li>Paint</li>
-                <li>Bathroom, Kitchen, Bar</li>
-                <li>Flooring</li>
-                <li>Trim/Fine Carpentry</li>
-                <li>Log Carpentry</li>
+            <div className="mb-20">
+              <h3 className="text-primary-color mb-12">
+                We Have Experience In:
+              </h3>
+              <ul className="generalSkills-list">
+                <li id="siding">Siding</li>
+                <li id="stone">Stone</li>
+                <li id="window">Windows</li>
+                <li id="framing">Framing / Sheeting</li>
+                <li id="deck">Deck Construction / Replacement</li>
+                <li id="paint">Paint</li>
+                <li id="kitchen">Bathroom / Kitchen / Bar</li>
+                <li id="flooring">Flooring</li>
+                <li id="fineCarp">Trim / Fine Carpentry</li>
+                <li id="logCarp">Log Carpentry</li>
               </ul>
             </div>
             <div>
-              <p>Have an odd request? We love to hear about those too!</p>
+              <p className="text-3xl mb-4">
+                Have an odd request? We love to hear about those too!
+              </p>
               <button className="btn btn__primary">
                 <Link href="/contact">Get Started!</Link>
               </button>
