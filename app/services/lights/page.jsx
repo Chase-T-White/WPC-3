@@ -54,7 +54,7 @@ const page = () => {
                       <Link href="/contact">Contact Us!</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2">
+                  <div className="relative col-start-2 h-full">
                     <Image
                       src={
                         "/images/Services/HolidayLights/Seasonal/lights1.jpg"
@@ -64,7 +64,7 @@ const page = () => {
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-3">
+                  <div className="relative col-start-3 h-full">
                     <Image
                       src={
                         "/images/Services/HolidayLights/Seasonal/lights2.jpg"
@@ -74,7 +74,7 @@ const page = () => {
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-4">
+                  <div className="relative col-start-4 h-full">
                     <Image
                       src={
                         "/images/Services/HolidayLights/Seasonal/lights3.jpg"
@@ -96,14 +96,14 @@ const page = () => {
                       <Link href="/services/oelo">Learn More</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2">
+                  <div className="relative col-start-2 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Permanent/oelo1.jpg"}
                       fill
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-3">
+                  <div className="relative col-start-3 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Permanent/oelo2.jpg"}
                       fill
@@ -123,21 +123,21 @@ const page = () => {
                       <Link href="/contact">Contact Us!</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2">
+                  <div className="relative col-start-2 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Arbor/arbor1.jpg"}
                       fill
                       className="object-center object-cover"
                     />
                   </div>
-                  <div className="relative col-start-3">
+                  <div className="relative col-start-3 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Arbor/arbor2.jpg"}
                       fill
                       className="object-center object-cover"
                     />
                   </div>
-                  <div className="relative col-start-4">
+                  <div className="relative col-start-4 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Arbor/arbor3.jpg"}
                       fill
@@ -157,14 +157,14 @@ const page = () => {
                       <Link href="/contact">Contact Us!</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2">
+                  <div className="relative col-start-2 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Custom/custom1.jpg"}
                       fill
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-3">
+                  <div className="relative col-start-3 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Custom/custom2.jpg"}
                       fill

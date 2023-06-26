@@ -13,7 +13,9 @@ const page = () => {
       <PageHeader heading={heading} text={text} image={image} />
       <section>
         <article className="w-screen max-w-[1200px] mx-auto">
-          <h3 className="text-center mb-4">OELO Lighting Solutions</h3>
+          <h3 className="text-primary-color text-center mb-4">
+            OELO Lighting Solutions
+          </h3>
           <div>
             <p className="mb-16">
               OELO's permanent LED home lighting technology puts endless color
