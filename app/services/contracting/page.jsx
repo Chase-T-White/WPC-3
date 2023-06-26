@@ -1,6 +1,7 @@
 import React from "react";
 import PageHeader from "@/app/Components/PageHeader";
 import Link from "next/link";
+import { GiPolarStar } from "react-icons/gi";
 
 const page = () => {
   const heading = "General Contracting";
@@ -12,11 +13,11 @@ const page = () => {
       <PageHeader heading={heading} text={text} image={image} />
       <section>
         <article className="w-screen max-w-[1200px] mx-auto">
-          <h3 className="text-center mb-4 text-primary-color">
+          <h2 className="text-center mb-4 text-primary-color mb-12">
             Well, What Do You Need Done?
-          </h3>
+          </h2>
           <div>
-            <p className="mb-16">
+            <p className="mb-40">
               That's our simple pitch to anyone that asks what it is that we do.
               We're serious, if you asked us to manage the construction of a
               space station on the moon, we'd figure out exactly how to get it
@@ -25,8 +26,11 @@ const page = () => {
               commercial gravel work, and everything in between, there's rarely
               a task we can't handle!
             </p>
+            <div className="flex justify-center items-center mb-40">
+              <GiPolarStar className="text-primary-color text-4xl" />
+            </div>
             <div>
-              <h5>We Have Experience In:</h5>
+              <h3 className="text-primary-color">We Have Experience In:</h3>
               <ul>
                 <li>Siding</li>
                 <li>Stone</li>

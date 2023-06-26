@@ -37,7 +37,7 @@ const Services = () => {
       id="services"
       className="h-auto min-h-[800px] grid grid-cols-1 lg:grid-cols-2 auto-rows-max lg:grid-rows-1"
     >
-      <article className="row-start-1 col-span-1 text-black overflow-hidden bg-gray lg:bg-transparent lg:pb-16">
+      <article className="row-start-1 col-span-1 text-black overflow-hidden bg-gray lg:pb-16">
         <div className="relative sm:max-w-[80%] h-full mx-auto py-8 lg:py-0 px-8 sm:px-0">
           <h2 className="lg:mt-32 lg:mb-8">
             It's <span className="text-primary-color">Project Season</span>

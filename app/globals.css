@@ -171,3 +171,9 @@ form textarea:focus-visible {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Holiday Lights Cards */
+
+.holiday-light-card {
+  background-color: var(--dark);
+}
