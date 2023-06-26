@@ -21,10 +21,10 @@ const Hero = () => {
           Bridging the Visionary Gap: Translating Ideas into Action
         </h2>
         <div className="flex flex-col gap-8 sm:block">
-          <Link href="#" className="btn btn__primary sm:mr-16">
+          <Link href="#services" className="btn btn__primary sm:mr-16">
             Explore Our Services
           </Link>
-          <Link href="#" className="btn">
+          <Link href="projects" className="btn">
             View Our Portfolio
           </Link>
         </div>

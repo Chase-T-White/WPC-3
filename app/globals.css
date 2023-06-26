@@ -81,6 +81,24 @@ section {
   margin-bottom: 8rem;
 }
 
+form div input {
+  font-size: 24px;
+  border-bottom: 2px solid white;
+}
+
+form div input:focus-visible {
+  outline: none;
+}
+
+form textarea {
+  border: 2px solid transparent;
+}
+
+form textarea:focus-visible {
+  outline: none;
+  border: 2px solid white;
+}
+
 .btn {
   display: inline-block;
   background-color: var(--bg-gradient-dark);

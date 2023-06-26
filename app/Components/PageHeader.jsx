@@ -19,6 +19,7 @@ const PageHeader = ({ heading, text, image }) => {
               src={image}
               alt="Work Bench"
               fill
+              priority
               className="object-cover object-center"
             />
           </motion.div>

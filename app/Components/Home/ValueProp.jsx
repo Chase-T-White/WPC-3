@@ -29,6 +29,7 @@ const ValueProp = () => {
             alt="Front of a nice house during the summer"
             src={"/images/Home/valueProp.jpg"}
             fill
+            priority
             className="object-cover object-right scale-150 -z-10"
           />
           <motion.h2
