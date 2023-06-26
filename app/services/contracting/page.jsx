@@ -13,11 +13,11 @@ const page = () => {
       <PageHeader heading={heading} text={text} image={image} />
       <section>
         <article className="w-screen max-w-[1400px] mx-auto">
-          <h2 className="text-center mb-4 text-primary-color mb-12">
-            Well, What Do You Need Done?
-          </h2>
           <div>
-            <p className="mb-40">
+            <h2 className="text-center mb-4 text-primary-color mb-12">
+              Well, What Do You Need Done?
+            </h2>
+            <p className="max-w-[100ch] mx-auto mb-40 px-4">
               That's our simple pitch to anyone that asks what it is that we do.
               We're serious, if you asked us to manage the construction of a
               space station on the moon, we'd figure out exactly how to get it
@@ -26,34 +26,32 @@ const page = () => {
               commercial gravel work, and everything in between, there's rarely
               a task we can't handle!
             </p>
-            <div className="flex justify-center items-center mb-40">
-              <GiPolarStar className="text-primary-color text-4xl" />
-            </div>
-            <div className="mb-20">
-              <h3 className="text-primary-color mb-12">
-                We Have Experience In:
-              </h3>
-              <ul className="generalSkills-list">
-                <li id="siding">Siding</li>
-                <li id="stone">Stone</li>
-                <li id="window">Windows</li>
-                <li id="framing">Framing / Sheeting</li>
-                <li id="deck">Deck Construction / Replacement</li>
-                <li id="paint">Paint</li>
-                <li id="kitchen">Bathroom / Kitchen / Bar</li>
-                <li id="flooring">Flooring</li>
-                <li id="fineCarp">Trim / Fine Carpentry</li>
-                <li id="logCarp">Log Carpentry</li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-3xl mb-4">
-                Have an odd request? We love to hear about those too!
-              </p>
-              <button className="btn btn__primary">
-                <Link href="/contact">Get Started!</Link>
-              </button>
-            </div>
+          </div>
+          <div className="flex justify-center items-center mb-40">
+            <GiPolarStar className="text-primary-color text-4xl" />
+          </div>
+          <div className="mb-20">
+            <h3 className="text-primary-color mb-12">We Have Experience In:</h3>
+            <ul className="generalSkills-list">
+              <li id="siding">Siding</li>
+              <li id="stone">Stone</li>
+              <li id="window">Windows</li>
+              <li id="framing">Framing / Sheeting</li>
+              <li id="deck">Deck Construction / Replacement</li>
+              <li id="paint">Paint</li>
+              <li id="kitchen">Bathroom / Kitchen / Bar</li>
+              <li id="flooring">Flooring</li>
+              <li id="fineCarp">Trim / Fine Carpentry</li>
+              <li id="logCarp">Log Carpentry</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-3xl mb-4">
+              Have an odd request? We love to hear about those too!
+            </p>
+            <button className="btn btn__primary">
+              <Link href="/contact">Get Started!</Link>
+            </button>
           </div>
         </article>
       </section>
