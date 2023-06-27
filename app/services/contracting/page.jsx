@@ -11,8 +11,8 @@ const page = () => {
   return (
     <main>
       <PageHeader heading={heading} text={text} image={image} />
-      <section>
-        <article className="w-screen max-w-[1400px] mx-auto">
+      <section className="px-8">
+        <article className="w-full max-w-[1400px] mx-auto">
           <div>
             <h2 className="text-center mb-4 text-primary-color mb-12">
               Well, What Do You Need Done?
@@ -55,7 +55,7 @@ const page = () => {
           </div>
         </article>
       </section>
-      <section>Service Page Gallery</section>
+      {/* <section>Service Page Gallery</section> */}
     </main>
   );
 };

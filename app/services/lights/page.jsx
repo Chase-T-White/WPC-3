@@ -12,13 +12,13 @@ const page = () => {
   return (
     <main>
       <PageHeader heading={heading} text={text} image={image} />
-      <section>
-        <article className="w-screen max-w-[1400px] mx-auto">
+      <section className="px-8">
+        <article className="w-full max-w-[1400px] mx-auto">
           <h2 className="text-center text-primary-color mb-12">
             Let's Lighten Up Your Holidays!
           </h2>
           <div>
-            <div className="flex gap-32 mb-40">
+            <div className="flex flex-col lg:flex-row gap-16 lg:gap-32 mb-40">
               <p>
                 It's a little-known fact that White Peak Contracting was founded
                 on its holiday lighting services. Now, half a decade later, we
@@ -41,7 +41,7 @@ const page = () => {
                 Holiday Lighting Options
               </h3>
               <ul className="flex flex-col gap-24">
-                <li className="holiday-light-card p-8 grid grid-cols-[repeat(4,_1fr)] gap-8">
+                <li className="holiday-light-card p-8 grid grid-cols-1 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-[repeat(4,_1fr)] grid-rows-2 sm:grid-rows-1 gap-8">
                   <div className="col-start-1">
                     <h6 className="text-primary-color mb-4">Seasonal</h6>
                     <p className="mb-8">
@@ -54,7 +54,7 @@ const page = () => {
                       <Link href="/contact">Contact Us!</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2 h-full">
+                  <div className="relative row-start-2 sm:row-start-1 sm:col-start-2 h-full">
                     <Image
                       src={
                         "/images/Services/HolidayLights/Seasonal/lights1.jpg"
@@ -64,7 +64,7 @@ const page = () => {
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-3 h-full">
+                  <div className="relative hidden lg:block col-start-3 h-full">
                     <Image
                       src={
                         "/images/Services/HolidayLights/Seasonal/lights2.jpg"
@@ -74,7 +74,7 @@ const page = () => {
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-4 h-full">
+                  <div className="relative hidden lg:block col-start-4 h-full">
                     <Image
                       src={
                         "/images/Services/HolidayLights/Seasonal/lights3.jpg"
@@ -85,7 +85,7 @@ const page = () => {
                     />
                   </div>
                 </li>
-                <li className="holiday-light-card p-8 grid grid-cols-[1fr_repeat(2,_1.5fr)] gap-8">
+                <li className="holiday-light-card p-8 grid grid-cols-1 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-[1fr_repeat(2,_1.5fr)] grid-rows-2 sm:grid-rows-1 gap-8">
                   <div className="col-start-1">
                     <h6 className="text-primary-color mb-4">Permanent</h6>
                     <p className="mb-8">
@@ -96,14 +96,14 @@ const page = () => {
                       <Link href="/services/oelo">Learn More</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2 h-full">
+                  <div className="relative row-start-2 sm:row-start-1 sm:col-start-2 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Permanent/oelo1.jpg"}
                       fill
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-3 h-full">
+                  <div className="relative hidden lg:block col-start-3 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Permanent/oelo2.jpg"}
                       fill
@@ -111,7 +111,7 @@ const page = () => {
                     />
                   </div>
                 </li>
-                <li className="holiday-light-card p-8 grid grid-cols-[repeat(4,_1fr)] gap-8">
+                <li className="holiday-light-card p-8 grid grid-cols-1 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-[repeat(4,_1fr)] grid-rows-2 sm:grid-rows-1 gap-8">
                   <div className="col-start-1">
                     <h6 className="text-primary-color mb-4">Arbor</h6>
                     <p className="mb-8">
@@ -123,21 +123,21 @@ const page = () => {
                       <Link href="/contact">Contact Us!</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2 h-full">
+                  <div className="relative row-start-2 sm:row-start-1 sm:col-start-2 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Arbor/arbor1.jpg"}
                       fill
                       className="object-center object-cover"
                     />
                   </div>
-                  <div className="relative col-start-3 h-full">
+                  <div className="relative hidden lg:block col-start-3 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Arbor/arbor2.jpg"}
                       fill
                       className="object-center object-cover"
                     />
                   </div>
-                  <div className="relative col-start-4 h-full">
+                  <div className="relative hidden lg:block col-start-4 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Arbor/arbor3.jpg"}
                       fill
@@ -145,7 +145,7 @@ const page = () => {
                     />
                   </div>
                 </li>
-                <li className="holiday-light-card p-8 grid grid-cols-[1fr_repeat(2,_1.5fr)] gap-8">
+                <li className="holiday-light-card p-8 grid grid-cols-1 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-[1fr_repeat(2,_1.5fr)] grid-rows-2 sm:grid-rows-1 gap-8">
                   <div className="col-start-1">
                     <h6 className="text-primary-color mb-4">Custom</h6>
                     <p className="mb-8">
@@ -157,14 +157,14 @@ const page = () => {
                       <Link href="/contact">Contact Us!</Link>
                     </button>
                   </div>
-                  <div className="relative col-start-2 h-full">
+                  <div className="relative row-start-2 sm:row-start-1 sm:col-start-2 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Custom/custom1.jpg"}
                       fill
                       className="object-cover object-center"
                     />
                   </div>
-                  <div className="relative col-start-3 h-full">
+                  <div className="relative hidden lg:block col-start-3 h-full">
                     <Image
                       src={"/images/Services/HolidayLights/Custom/custom2.jpg"}
                       fill
@@ -177,7 +177,7 @@ const page = () => {
           </div>
         </article>
       </section>
-      <section>Holiday Lighting Page Gallery</section>
+      {/* <section>Holiday Lighting Page Gallery</section> */}
     </main>
   );
 };

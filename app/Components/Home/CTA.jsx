@@ -7,16 +7,20 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { GiPolarStar } from "react-icons/gi";
 import { IoMdMail } from "react-icons/io";
 
 const CTA = () => {
   return (
-    <section className="px-[50px] cta pt-32 pb-12">
-      <h2 className="text-primary-color text-center mb-24">
+    <section className="px-0 sm:px-8 lg:px-[50px] cta pt-32 pb-12">
+      <h2 className="text-primary-color text-center mb-12 lg:mb-24">
         Let Us Bring Your Vision to Life. Schedule a Consultation Now!
       </h2>
-      <article className="grid grid-cols-2">
-        <div className="flex h-full w-full items-center justify-center">
+      <div className="flex lg:hidden justify-center items-center mb-12">
+        <GiPolarStar className="text-primary-color text-4xl" />
+      </div>
+      <article className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1">
+        <div className="flex h-full w-full lg:items-center justify-center">
           <div>
             <p className="text-primary-color text-4xl mb-4">
               Availble Mon-Sat 8AM - 6PM
@@ -92,7 +96,7 @@ const CTA = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[600px] bg-bg-gradient-dark py-16 px-8">
+        <div className="max-w-[600px] bg-bg-gradient-dark py-16 px-8 mx-auto lg:mx-0">
           <h4 className="text-primary-color mb-12">
             Send us an inquiry. We would love to hear from you!
           </h4>

@@ -61,16 +61,16 @@ const Project = ({ params }) => {
                 i % 2 === 0
                   ? "border-r-primary-color border-r-2"
                   : "border-l-primary-color border-l-2"
-              } py-64 px-8 grid grid-cols-2 gap-24`}
+              } py-64 px-8 grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-24`}
             >
               <div
                 className={`flex flex-col justify-center ${
-                  i % 2 !== 0 ? "col-start-2" : ""
+                  i % 2 !== 0 ? "row-start-2 md:col-start-2" : ""
                 }`}
               >
                 <p>{stage.projectDetails}</p>
                 {lastStage && (
-                  <div className="flex gap-16 mt-12">
+                  <div className="flex flex-col sm:flex-row gap-16 mt-12">
                     <button className="btn btn__primary">
                       <Link href="/contact">Schedule a Consultation</Link>
                     </button>
@@ -81,7 +81,7 @@ const Project = ({ params }) => {
                 )}
               </div>
               <div
-                className={`relative min-h-[250px] h-[75vh] ${
+                className={`relative min-h-[250px] md:h-[50vh] lg:h-[75vh] ${
                   i % 2 !== 0 ? "col-start-1 row-start-1" : ""
                 }`}
               >

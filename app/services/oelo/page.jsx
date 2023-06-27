@@ -11,8 +11,8 @@ const page = () => {
   return (
     <main>
       <PageHeader heading={heading} text={text} image={image} />
-      <section className="mt-48 w-screen grid grid-cols-[1fr,_2fr] gap-[150px] px-8">
-        <article>
+      <section className="mt-48 w-screen grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-[1fr,_2fr] grid-rows-[1fr_400px] sm:grid-rows-3 xl:grid-rows-1 gap-[50px] 2xl:gap-[150px] px-8">
+        <article className="row-start-1">
           <h3 className="text-primary-color mb-4">OELO Lighting Solutions</h3>
           <div>
             <p className="mb-16">
@@ -27,7 +27,7 @@ const page = () => {
               stands along with our mission to provide you with the best
               service, the best products, to ensure your best experience!
             </p>
-            <div className="flex gap-16">
+            <div className="flex flex-col sm:flex-row gap-16">
               <button className="btn btn__primary">
                 <Link href="https://www.oelo.com/" target="_blank">
                   Contact Now
@@ -41,7 +41,7 @@ const page = () => {
             </div>
           </div>
         </article>
-        <article>
+        <article className="row-start-2 sm:row-span-2 xl:row-start-1 xl:row-span-1">
           <div className="relative h-full">
             <Image
               src={"/images/Services/OELO/oelo1.jpg"}
@@ -52,7 +52,7 @@ const page = () => {
           </div>
         </article>
       </section>
-      <section>OELO Lighting Page Gallery</section>
+      {/* <section>OELO Lighting Page Gallery</section> */}
     </main>
   );
 };
