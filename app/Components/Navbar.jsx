@@ -67,7 +67,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-0 left-0 bg-bg-gradient-dark z-10 flex w-screen">
+    <nav className="absolute top-0 left-0 z-10 flex w-screen">
       <div className="flex flex-col w-full hidden sm:block">
         <div className="flex items-center py-[24px] px-4 bg-dark">
           <div className="flex grow gap-12">
@@ -113,7 +113,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="flex py-4 px-4">
+        <div className="flex py-4 px-4 bg-bg-gradient-dark">
           <div className="nav-logo">
             <Link href={"/"}>
               <Image
@@ -125,43 +125,20 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="flex justify-center items-center grow">
+          <div className="flex justify-center items-center text-white grow">
             <ul className="relative flex justify-between items-center gap-16 p-[8px] nav-menuHidden">
               <li
                 tabIndex={0}
-                className="flex items-center gap-[2px] text-dark cursor-pointer"
+                className="flex gap-[8px] cursor-pointer nav-service"
                 onClick={() => setShowDropdown(!showDropdown)}
               >
                 Services
-                <AiFillCaretDown className="text-primary-color" />
-                <div
-                  className={`text-dark cursor-pointer ${
-                    showDropdown
-                      ? "absolute top-full left-0 flex justify-between w-full py-4 px-8 mt-[8px]"
-                      : "hidden"
-                  }`}
-                  onClick={() => setShowDropdown(false)}
-                >
-                  <div>
-                    <Link href={"services/contracting"}>
-                      General Contracting
-                    </Link>
-                  </div>
-                  <div>
-                    <Link href={"services/builds"}>Build / Upgrade</Link>
-                  </div>
-                  <div>
-                    <Link href={"services/oelo"}>OELO Lighting Solutions</Link>
-                  </div>
-                  <div>
-                    <Link href={"services/lights"}>Holiday Lighting</Link>
-                  </div>
-                </div>
+                <AiFillCaretDown className="text-primary-color mt-[4px]" />
               </li>
-              <li className="text-dark cursor-pointer">
+              <li className="cursor-pointer">
                 <Link href={"/projects"}>Portfolio</Link>
               </li>
-              <li className="text-dark cursor-pointer">
+              <li className="cursor-pointer">
                 <Link href={"/story"}>Our Story</Link>
               </li>
               <li className="text-primary-color cursor-pointer">
@@ -170,6 +147,35 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        <AnimatePresence>
+          {showDropdown && (
+            <div className="overflow-hidden bg-transparent">
+              <motion.div
+                initial={{ y: "-100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-100%" }}
+                transition={{ duration: 0.75, type: "linear" }}
+                className={`cursor-pointer ${
+                  showDropdown ? "flex justify-around w-full py-8 bg-dark" : ""
+                }`}
+                onClick={() => setShowDropdown(false)}
+              >
+                <div>
+                  <Link href={"services/contracting"}>General Contracting</Link>
+                </div>
+                <div>
+                  <Link href={"services/builds"}>Build / Upgrade</Link>
+                </div>
+                <div>
+                  <Link href={"services/oelo"}>OELO Lighting Solutions</Link>
+                </div>
+                <div>
+                  <Link href={"services/lights"}>Holiday Lighting</Link>
+                </div>
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
       </div>
       <div className="flex items-center w-full sm:hidden p-4">
         <div className="nav-logo grow">

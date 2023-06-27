@@ -11,21 +11,21 @@ import {
 
 const SideModalNav = ({ setShowDropdown, showDropdown }) => {
   return (
-    <div className="absolute top-full right-0 bg-dark px-4 pb-4">
-      <ul className="relative flex flex-col gap-8 py-8 nav-menuHidden">
+    <div className="absolute top-full right-0 bg-dark px-4 pb-8">
+      <ul className="relative flex flex-col items-start gap-8 py-8">
         <li
           tabIndex={0}
-          className="flex flex-col gap-[2px] text-white cursor-pointer"
+          className="flex flex-col items-start gap-[2px] text-white cursor-pointer"
           onClick={() => setShowDropdown(!showDropdown)}
         >
-          <div className="flex">
+          <div className="flex gap-[8px] nav-service">
             Services
-            <AiFillCaretDown className="text-primary-color" />
+            <AiFillCaretDown className="text-primary-color mt-[4px]" />
           </div>
           <div
             className={`text-white cursor-pointer ${
               showDropdown
-                ? "flex flex-col justify-between gap-4 w-full py-4 px-8 mt-[8px]"
+                ? "flex flex-col justify-between gap-[4px] w-full py-[4px] px-4 mt-[8px]"
                 : "hidden"
             }`}
             onClick={() => setShowDropdown(false)}
@@ -54,7 +54,7 @@ const SideModalNav = ({ setShowDropdown, showDropdown }) => {
           <Link href={"/contact"}>Get In Touch</Link>
         </li>
       </ul>
-      <div className="flex flex-col gap-[4px] mb-[4px]">
+      <div className="flex flex-col gap-[4px] mb-4">
         <div tabIndex={0} className="flex items-center gap-4">
           <AiOutlinePhone className="text-primary-color text-xl" />
           (406) 697-7202
@@ -72,7 +72,7 @@ const SideModalNav = ({ setShowDropdown, showDropdown }) => {
           <AiFillFacebook
             title="White Peak Facebook"
             tabIndex={0}
-            className="text-primary-color text-xl"
+            className="text-primary-color text-3xl"
           />
         </Link>
         <Link
@@ -82,7 +82,7 @@ const SideModalNav = ({ setShowDropdown, showDropdown }) => {
           <AiFillInstagram
             title="White Peak Instagram"
             tabIndex={0}
-            className="text-primary-color text-xl"
+            className="text-primary-color text-3xl"
           />
         </Link>
         <Link
@@ -92,7 +92,7 @@ const SideModalNav = ({ setShowDropdown, showDropdown }) => {
           <AiFillLinkedin
             title="Dillon White LinkedIn"
             tabIndex={0}
-            className="text-primary-color text-xl"
+            className="text-primary-color text-3xl"
           />
         </Link>
       </div>

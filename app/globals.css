@@ -74,7 +74,8 @@ p,
 a,
 button,
 ul,
-ol {
+ol,
+.nav-service {
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
